@@ -34,8 +34,8 @@ class ProductForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSave}>
-        <h2 className="Form-container">Enter a new product</h2>
-        <span>Name:</span>
+        <h2 className="Form-container">Enter a new product:</h2>
+        <span><strong>Name:</strong></span>
         <InputGroup
           size="sm"
           className="mb-3 save-text-field"
@@ -48,7 +48,7 @@ class ProductForm extends Component {
             ref={el => (this.inputName = el)}
           />
         </InputGroup>
-        <span>Category:</span>
+        <span><strong>Category:</strong></span>
         <InputGroup
           size="sm"
           className="mb-3 save-text-field"
@@ -61,7 +61,7 @@ class ProductForm extends Component {
             ref={el => (this.inputCategory = el)}
           />
         </InputGroup>
-        <span>Price:</span>
+        <span><strong>Price:</strong></span>
         <InputGroup
           size="sm"
           className="mb-3 save-text-field"
