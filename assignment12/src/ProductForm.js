@@ -1,25 +1,18 @@
 import React from 'react';
-import React, { Component } from 'react'
 
 
-class ProductForm extends Component {
-    state = {value: ''}
-    newColor = e => 
-        this.setState({value: e.target.value})
 
-    submit = e => {
-        console.log('New color: ' + this.state.value)
-        e.preventDefault()
-    }
-
-    render() {
-        return (
-            <form onSubmit={this.submit}>
-                <label>Favorite Color: 
-                    <input type="color" onChange={this.newColor} /><br />
-                    <button>Submit</button>
-                </label>
+export const ProductForm = () =>
+<div>
+    <h2>Enter a new product</h2>
+            <form>
+                <label>Name</label><br />  
+                    <input type="text"/><br />                   
+                <label>Category</label><br />  
+                    <input type="text"/><br />                   
+                <label>Price</label><br />  
+                    <input type="text"/><br />                   
+                    <br />  
+                <button>Save</button>
             </form>
-        )
-    }
-}
+</div>
